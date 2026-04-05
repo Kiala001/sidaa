@@ -109,10 +109,10 @@ server {
 | Lançar Notas | Sim | Sim | Sim** | Não |
 | Validar Notas | Sim | Sim | Não | Não |
 | Ver Notas | Sim | Sim | Sim** | Sim*** |
-| Relatórios | Sim | Sim | ✅** | ❌ |
-| Relatório Institucional | ✅ | ✅ | ❌ | ❌ |
-| Criar Eventos Agenda | ✅ | ✅ | ✅ | ❌ |
-| Ver Agenda | ✅ | ✅ | ✅ | ✅ |
+| Relatórios | Sim | Sim | Sim** | Não |
+| Relatório Institucional | Sim | Sim | Não | Não |
+| Criar Eventos Agenda | Sim | Sim | Sim | Não |
+| Ver Agenda | Sim | Sim | Sim | Sim |
 
 *Gestor só pode criar/editar Docentes e Estudantes  
 **Docente apenas das suas turmas/disciplinas  
