@@ -86,7 +86,7 @@
     </div>
 
     <p style="text-align:center;color:var(--cinza-3);font-size:.73rem;margin-top:1.25rem">
-      INSTIC &copy; 2024/2025 — SIDAA v1.0
+      INSTIC &copy; 2025/2026 - SIDAA v1.0
     </p>
   </div>
 </div>
