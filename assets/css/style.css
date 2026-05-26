@@ -605,3 +605,16 @@ tbody tr:last-child { border-bottom: none; }
   background: rgba(0,0,0,.4);
 }
 .sidebar-overlay.visivel { display: block; }
+
+/* ── MODAL LARGO (gestão de turma) ──────────────────────────── */
+.modal.largo { max-width: 780px; }
+
+/* ── LABEL CHECKBOX ESTUDANTES ───────────────────────────────── */
+.est-item { transition: background var(--transition); }
+.est-item:last-child { border-bottom: none !important; }
+
+/* ── FORM-ROW-3 em telas pequenas dentro de modal ────────────── */
+@media (max-width: 640px) {
+  .form-row-3 { grid-template-columns: 1fr; }
+  .modal { max-width: 100% !important; margin: .5rem; }
+}

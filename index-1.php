@@ -7,7 +7,8 @@
   <meta name="description" content="SIDAA - Sistema integrado de gestão académica do INSTIC">
 
   <!-- Font Awesome 6 -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/icons-reference/font-icon-style.css">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,7 +28,7 @@
   <div class="login-card">
     <div class="login-logo">
       <div class="logo-icon">
-        <i class="fa-solid fa-graduation-cap"></i>
+        <i class="fa fa-graduation-cap"></i>
       </div>
       <h1>SIDAA</h1>
       <p>Sistema de Informação e Dados Académicos</p>
@@ -38,7 +39,7 @@
     <form id="form-login" autocomplete="on">
       <div class="form-group">
         <label class="form-label" for="email">
-          <i class="fa-solid fa-envelope" style="color:var(--azul-claro);margin-right:.35rem"></i>
+          <i class="fa fa-envelope" style="color:var(--azul-claro);margin-right:.35rem"></i>
           Email
         </label>
         <input class="form-control" type="email" id="email" name="email"
@@ -46,7 +47,7 @@
       </div>
       <div class="form-group">
         <label class="form-label" for="senha">
-          <i class="fa-solid fa-lock" style="color:var(--azul-claro);margin-right:.35rem"></i>
+          <i class="fa fa-lock" style="color:var(--azul-claro);margin-right:.35rem"></i>
           Palavra-passe
         </label>
         <div style="position:relative">
@@ -56,13 +57,13 @@
           <button type="button" onclick="toggleSenha()"
                   style="position:absolute;right:.75rem;top:50%;transform:translateY(-50%);border:none;background:none;cursor:pointer;color:var(--texto-leve);font-size:.9rem"
                   id="btn-toggle-senha">
-            <i class="fa-solid fa-eye"></i>
+            <i class="fa fa-eye"></i>
           </button>
         </div>
       </div>
 
       <button type="submit" class="btn btn-primario" style="width:100%;justify-content:center;padding:.75rem;margin-top:.5rem;font-size:1rem">
-        <i class="fa-solid fa-right-to-bracket"></i> Entrar
+        <i class="fa fa-right-to-bracket"></i> Entrar
       </button>
     </form>
 
@@ -70,22 +71,22 @@
       <p style="font-size:.78rem;color:var(--texto-leve);text-align:center;margin-bottom:.75rem;font-weight:500">Contas de demonstração:</p>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:.4rem">
         <button class="btn btn-ghost btn-sm" style="justify-content:center;font-size:.78rem" onclick="preencherDemo('admin@sidaa.ao')">
-          <i class="fa-solid fa-shield"></i> Admin
+          <i class="fa fa-shield"></i> Admin
         </button>
         <button class="btn btn-ghost btn-sm" style="justify-content:center;font-size:.78rem" onclick="preencherDemo('antonio@sidaa.ao')">
-          <i class="fa-solid fa-chalkboard-teacher"></i> Docente
+          <i class="fa fa-user"></i> Docente
         </button>
         <button class="btn btn-ghost btn-sm" style="justify-content:center;font-size:.78rem" onclick="preencherDemo('joao@sidaa.ao')">
-          <i class="fa-solid fa-user-tie"></i> Gestor
+          <i class="fa fa-user-o"></i> Gestor
         </button>
         <button class="btn btn-ghost btn-sm" style="justify-content:center;font-size:.78rem" onclick="preencherDemo('ana@sidaa.ao')">
-          <i class="fa-solid fa-user-graduate"></i> Estudante
+          <i class="fa fa-graduation-cap"></i> Estudante
         </button>
       </div>
     </div>
 
     <p style="text-align:center;color:var(--cinza-3);font-size:.73rem;margin-top:1.25rem">
-      INSTIC &copy; 2024/2025 — SIDAA v1.0
+      INSTIC &copy; 2025/2026 - SIDAA v1.0
     </p>
   </div>
 </div>
@@ -102,7 +103,7 @@
   <aside class="sidebar">
     <div class="sidebar-logo">
       <div class="marca">
-        <div class="icone-marca"><i class="fa-solid fa-graduation-cap"></i></div>
+        <div class="icone-marca"><i class="fa fa-graduation-cap"></i></div>
         <div>
           <div class="nome-marca">SIDAA</div>
           <div class="sub-marca">Gestão Académica</div>
@@ -126,7 +127,7 @@
 
     <div class="sidebar-footer">
       <button class="btn-sair" onclick="App.sair()">
-        <i class="fa-solid fa-right-from-bracket"></i>
+        <i class="fa fa-right"></i>
         Terminar Sessão
       </button>
     </div>
@@ -138,14 +139,14 @@
     <!-- TOPBAR -->
     <header class="topbar">
       <button class="btn-menu-toggle" id="btn-menu-toggle">
-        <i class="fa-solid fa-bars"></i>
+        <i class="fa fa-bars"></i>
       </button>
 
       <div class="topbar-titulo" id="topbar-titulo">Dashboard</div>
 
       <!-- Notificações -->
       <button class="btn-notif" id="btn-notif" title="Notificações">
-        <i class="fa-solid fa-bell"></i>
+        <i class="fa fa-bell"></i>
         <span class="badge-notif" id="badge-notif">0</span>
       </button>
     </header>
@@ -153,9 +154,9 @@
     <!-- PAINEL DE NOTIFICAÇÕES -->
     <div id="notif-panel" class="notif-panel">
       <div class="notif-panel-header">
-        <h4><i class="fa-solid fa-bell"></i> Notificações</h4>
+        <h4><i class="fa fa-bell"></i> Notificações</h4>
         <button class="btn btn-ghost btn-xs" id="btn-marcar-todas">
-          <i class="fa-solid fa-check-double"></i> Marcar todas
+          <i class="fa fa-check-double"></i> Marcar todas
         </button>
       </div>
       <div id="notif-lista">
@@ -178,10 +179,10 @@ function toggleSenha() {
   const ico = document.querySelector('#btn-toggle-senha i');
   if (inp.type === 'password') {
     inp.type = 'text';
-    ico.className = 'fa-solid fa-eye-slash';
+    ico.className = 'fa fa-eye-slash';
   } else {
     inp.type = 'password';
-    ico.className = 'fa-solid fa-eye';
+    ico.className = 'fa fa-eye';
   }
 }
 function preencherDemo(email) {
@@ -192,8 +193,6 @@ function preencherDemo(email) {
 
 <!-- App JS -->
 <script src="assets/js/app.js"></script>
-<!-- Módulo Académico -->
-<script src="assets/js/academico.js"></script>
 
 </body>
 </html>
